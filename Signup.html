@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup</title>
+
+
+<style>
+    body {font-family:  Helvetica, sans-serif;}
+    * {box-sizing: border-box;}
+  
+/* Full-width input fields */
+   #mainDiv{
+    width: 50%;
+    display: flex;
+   
+    justify-content: center;
+   }
+
+  input[type=text], input[type=password] {
+  width: 100%;
+  padding: 15px;
+  margin: 5px 0 22px 0;
+  display: inline-block;
+  border: none;
+  background: #f1f1f1;
+}
+
+input[type=text]:focus, input[type=password]:focus {
+  background-color: #ddd;
+  outline: none;
+}
+
+hr {
+  border: 1px solid #f1f1f1;
+  margin-bottom: 25px;
+}
+
+/* Set a style for all buttons */
+.signupbtn {
+  background-color: #04AA6D;
+
+   padding: 14px 20px;
+
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  box-shadow: 0 9px #999;
+}
+.signupbtn:active {
+  background-color: #0cd38a;
+  box-shadow: 0 2px #496444;
+  transform: translateY(4px);
+}
+
+button:hover {
+  scale: 0.95;
+  opacity:1;
+}
+
+/* Extra styles for the cancel button */
+.cancelbtn {
+  padding: 14px 20px;
+  background-color: #e6b515;
+
+
+  font-size: 20px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  border: none;
+  box-shadow: 0 9px #999;
+}
+.cancelbtn:active {
+  background-color: #fad609;
+  box-shadow: 0 2px #504e42;
+  transform: translateY(4px);
+}
+
+/* Float cancel and signup buttons and add an equal width */
+.cancelbtn, .signupbtn {
+  float: left;
+  width: 50%;
+}
+
+/* Add padding to container elements */
+.container {
+  width: 50%;
+  padding: 16px;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  
+}
+b,span{
+    color :#b5876d;
+}
+#sign{
+  text-align: center;
+  color :#b5876d;
+}
+#signp{
+  text-align: center
+}
+form{
+display: flex;
+
+justify-content: center;
+ 
+}
+
+/* Change styles for cancel button and signup button on extra small screens */
+@media screen and (max-width: 300px) {
+  .cancelbtn, .signupbtn {
+    width: 100%;
+  }
+}
+
+    </style>
+
+    </head>
+
+
+    <body>
+
+    <!-- <div id="mainDiv"> -->
+
+      <form id="signupform" >
+        <div class="container">
+          <h1 id="sign">Sign Up</h1>
+          <p id="signp">Please fill in this form to create an account.</p>
+          <hr>
+           
+          <label for="fname"><b>First Name*</b></label><br>
+           <input type="text" id="fname" name="fname" placeholder="First Name" class="account">
+
+           <label for="fname"><b>Last Name*</b></label><br>
+           <input type="text" id="lname" name="lname" placeholder="Last Name" class="account">
+
+          <label for="email"><b>Email</b></label>
+          <input type="text" id="email" placeholder="Enter Email" name="email" >
+      
+          <label for="psw"><b>Password</b></label>
+          <input type="password" id="password"
+          placeholder="Enter Password" name="psw" >
+      
+          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <input type="password" id="confpassword" placeholder="Repeat Password" name="psw-repeat" >
+      
+          <label>
+            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+          </label>
+      
+          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+      
+          <div class="clearfix">
+            <button type="button" class="cancelbtn">Cancel</button>
+            <input  type="submit" class="signupbtn" />
+          </div>
+        </div>
+      </form>
+    
+
+    
+    <script>
+      // let signinbtn = document.querySelector(".signupbtn");
+      // signinbtn.addEventListener("click",signinfun())
+     
+      // function signinfun (){
+      //   location.href="Login.html"
+      // }
+
+
+
+      document.querySelector("#signupform").addEventListener("submit", signup);
+
+function signup(e) {
+  e.preventDefault();
+  console.log("signup");
+  var fname = document.getElementById("fname").value;
+  localStorage.setItem("userName", JSON.stringify(fname));
+  var lname = document.getElementById("lname").value;
+  var email = document.getElementById("email").value;
+  var password = document.getElementById("password").value;
+  var confpass = document.getElementById("confpassword").value;
+
+
+  if (password != confpass) {
+    alert("Password & Confirm Password does not match");
+    return;
+  }
+ 
+
+  var data = { fname, lname, email, password };
+
+  var old_data = JSON.parse(localStorage.getItem("signupData")) || [];
+
+  old_data.push(data);
+  localStorage.setItem("signupData", JSON.stringify(old_data));
+
+  
+  alert("Signup Successfull");
+  
+  window.location.href="Login.html"
+}
+
+   
+    </script>
+    
+    </body>
+</html>
