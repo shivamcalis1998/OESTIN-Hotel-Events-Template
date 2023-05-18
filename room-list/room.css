@@ -1,6 +1,6 @@
 #header{
     text-align: center;
-    margin-top: 20px;
+    margin-top: 100px;
     
     font-family: sans-serif ;
     color: #444444;
@@ -125,23 +125,41 @@
 
 #foot {
     
-   width: 3%;
+   width: 5%;
    display: flex;
    justify-content: space-between;
    align-items: center;
+   margin-top: 50px;
    margin-left: 50%;
    color: #444444;
+   font-family: sans-serif;
+}
+#foot a h3 {
+    color: #444444;
+    font-family: sans-serif;
+   
+}
+
+#foot a h3:hover {
+    color: rgb(207, 129, 27);
+
+   
 }
 #foot a h2 {
     color: #444444;
-   
-}
-#foot a h1 {
-    color: #444444;
+    font-family: sans-serif;
+    color: rgb(207, 129, 27);
    
 }
 #foot a {
     text-decoration: none;
+    /* font-family: sans-serif; */
+   
+}
+
+#text h3:hover {
+    color: rgb(207, 129, 27);
+
    
 }
 #input {
