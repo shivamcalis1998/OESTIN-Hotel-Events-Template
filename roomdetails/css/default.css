@@ -1,38 +1,4 @@
-/* -----------------------------------
-Template Name: Oestin
-Template URI: https://devitems.com/html/oestin-preview/
-Description: This is html5 template
-Author: HasTech
-Author URI: https://devitems.com/
-Version: 1.0
-NOTE: This is main style sheet of template, 
-This file contains the styling for the actual Template. 
-Please do not change anything here! write in a custom.css file if required!
 
-*/
-/*================================================
-[  Table of contents  ]
-================================================
-01. General
-02. Text color
-03. Input
-04. Scrollup
-05. Basic margin padding
-06. Page section padding 
-07. Page section margin 
-08. Custom cloumn
-09. Background variation set 
-10. Section Title
-11. Pagination
-12. Breadcrumb
- 
-======================================
-[ End table content ]
-======================================*/
-
-/*************************
-    01. General
-*************************/
 @import url('https://fonts.googleapis.com/css?family=Lato:400,700|Open+Sans|Raleway:400,700');
 html, body {height: 100%;}
 body {
@@ -563,7 +529,7 @@ textarea:focus {
 }
 .bg-1 { background-image: url(../../img/bg/1.jpg);}
 .bg-2 { background-image: url("../../img/bg/2.jpg");}
-.bg-3 { background-image: url("../../img/bg/3.jpg");}
+.bg-3 { background-image: url("D:\oestin\Oestin\roomdetails\img\bg\3.jpg");}
 .bg-4 { background-image: url("../../img/bg/3.jpg");}
 .bg-5 { 
     background-image: url("../../img/bg/5.jpg");
