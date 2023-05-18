@@ -4,24 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script> -->
     <title>Signup</title>
 
 
 <style>
-    body {font-family:  Helvetica, sans-serif;}
-    * {box-sizing: border-box;}
+    body {font-family:  Helvetica, sans-serif;
+     
+    }
+    * {box-sizing: border-box;
+     background-image: url("");
+   
+    }
   
 /* Full-width input fields */
    #mainDiv{
-    width: 50%;
-    display: flex;
-   
-    justify-content: center;
+    /* width: 90%;
+    overflow: hidden;
+    padding: 20px; */
+    /* height:100vh; */
+    /* display: flex;
+
+    justify-content: center; */
    }
 
   input[type=text], input[type=password] {
   width: 100%;
-  padding: 15px;
+  padding: 14px;
   margin: 5px 0 22px 0;
   display: inline-block;
   border: none;
@@ -40,9 +50,9 @@ hr {
 
 /* Set a style for all buttons */
 .signupbtn {
-  background-color: #04AA6D;
-
-   padding: 14px 20px;
+  background-color: #cd7745;;
+  padding: 10px 18px;
+   /* padding: 14px 20px; */
 
   font-size: 20px;
   text-align: center;
@@ -53,9 +63,13 @@ hr {
   box-shadow: 0 9px #999;
 }
 .signupbtn:active {
-  background-color: #0cd38a;
+  background-color:#dc7b43;;
   box-shadow: 0 2px #496444;
   transform: translateY(4px);
+}
+.signupbtn:hover{
+  scale: 0.95;
+  opacity:1;
 }
 
 button:hover {
@@ -65,8 +79,8 @@ button:hover {
 
 /* Extra styles for the cancel button */
 .cancelbtn {
-  padding: 14px 20px;
-  background-color: #e6b515;
+  padding: 10px 18px;
+  background-color: rgb(28, 28, 27);
 
 
   font-size: 20px;
@@ -78,7 +92,7 @@ button:hover {
   box-shadow: 0 9px #999;
 }
 .cancelbtn:active {
-  background-color: #fad609;
+  background-color: #22221e;
   box-shadow: 0 2px #504e42;
   transform: translateY(4px);
 }
@@ -92,19 +106,23 @@ button:hover {
 /* Add padding to container elements */
 .container {
   width: 50%;
-  padding: 16px;
+  /* border-radius: 10px; */
+  padding: 20px;
   box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
   
 }
 b,span{
-    color :#b5876d;
+    color :#cd7745;
 }
 #sign{
+  margin-top: -2px;
+  margin-bottom: -7px;
   text-align: center;
-  color :#b5876d;
+  color :#cd7745;
 }
 #signp{
-  text-align: center
+  text-align: center;
+  margin-bottom: -2px;
 }
 form{
 display: flex;
@@ -127,7 +145,7 @@ justify-content: center;
 
     <body>
 
-    <!-- <div id="mainDiv"> -->
+    <div id="mainDiv">
 
       <form id="signupform" >
         <div class="container">
@@ -135,20 +153,20 @@ justify-content: center;
           <p id="signp">Please fill in this form to create an account.</p>
           <hr>
            
-          <label for="fname"><b>First Name*</b></label><br>
+          <label for="fname"><b>Full Name*</b></label><br>
            <input type="text" id="fname" name="fname" placeholder="First Name" class="account">
 
-           <label for="fname"><b>Last Name*</b></label><br>
-           <input type="text" id="lname" name="lname" placeholder="Last Name" class="account">
+           <!-- <label for="fname"><b>Last Name*</b></label><br>
+           <input type="text" id="lname" name="lname" placeholder="Last Name" class="account"> -->
 
-          <label for="email"><b>Email</b></label>
+          <label for="email"><b>Email*</b></label>
           <input type="text" id="email" placeholder="Enter Email" name="email" >
       
           <label for="psw"><b>Password</b></label>
           <input type="password" id="password"
           placeholder="Enter Password" name="psw" >
       
-          <label for="psw-repeat"><b>Repeat Password</b></label>
+          <label for="psw-repeat"><b>Confirm Password</b></label>
           <input type="password" id="confpassword" placeholder="Repeat Password" name="psw-repeat" >
       
           <label>
@@ -163,7 +181,7 @@ justify-content: center;
           </div>
         </div>
       </form>
-    
+    </div>
 
     
     <script>
@@ -183,30 +201,40 @@ function signup(e) {
   console.log("signup");
   var fname = document.getElementById("fname").value;
   localStorage.setItem("userName", JSON.stringify(fname));
-  var lname = document.getElementById("lname").value;
+  // var lname = document.getElementById("lname").value;
   var email = document.getElementById("email").value;
   var password = document.getElementById("password").value;
   var confpass = document.getElementById("confpassword").value;
-
-
+   
+  if(fname.length == 0  || email.length==0||password.length==0){
+    alert("Please complete all the required fields before submitting the form.")
+  }
+  else{
+    
   if (password != confpass) {
     alert("Password & Confirm Password does not match");
     return;
   }
  
 
-  var data = { fname, lname, email, password };
+  var data = { fname,  email, password };
 
   var old_data = JSON.parse(localStorage.getItem("signupData")) || [];
 
   old_data.push(data);
   localStorage.setItem("signupData", JSON.stringify(old_data));
 
-  
+
+
+  // Swal.fire("Congrats!", ", Your account is created!", "success");
   alert("Signup Successfull");
   
   window.location.href="Login.html"
 }
+
+  }
+   
+
 
    
     </script>
