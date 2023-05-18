@@ -37,6 +37,8 @@
 #chargs h2 {
     color: rgb(207, 129, 27);
     font-family: sans-serif;
+    text-align: right;
+    margin-right: 5%;
     
 
     
@@ -46,13 +48,13 @@
 #secondImage >div >div p{
     text-align: left;
     margin-left: 50px;
-    width: 55%;
+    width: 90%;
     font-family: sans-serif ;
     color: #444444;
 }
 #secondImage >div >div p ~ p{
     text-align: left;
-    width: 40%;
+    width: 65%;
     font-family:system-ui ;
     color: #444444;
 }
@@ -74,7 +76,7 @@
 }
 
 
-#footImage {
+/* #footImage {
     width: 45%;
     display: grid;
     margin: auto;
@@ -85,7 +87,7 @@
     margin-bottom: 60px;
     color: #444444;
     
-}
+} */
 
  #secondImage   > div{
      /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  */
@@ -97,7 +99,7 @@
 
 #secondImage   > div > a{
     width: auto;
-    padding-left: 20%;
+    padding-left: 2%;
 
    
     
