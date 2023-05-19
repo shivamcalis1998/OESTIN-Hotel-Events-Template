@@ -432,7 +432,7 @@ font-size: 20px;
   }
 
 } */
-@media screen and (max-width: 800px) {
+@media screen and (width: 800px) {
 
   #subfooter1{
     display: grid;
