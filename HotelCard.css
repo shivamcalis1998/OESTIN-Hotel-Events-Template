@@ -7,6 +7,9 @@
 #mainSection {
   /* display: grid; */
 }
+body {font-family:  Helvetica, sans-serif;
+     
+}
 
 #subSection {
   display: grid;
@@ -144,6 +147,18 @@ img {
 #sortDiv button:hover {
   background-color: #8e5838;
 }
+
+
+
+/* nav */
+
+
+
+
+
+
+
+
 
 @media screen and (max-width: 750px) {
   #subSection {
