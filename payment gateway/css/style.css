@@ -10,15 +10,21 @@
 }
 
 body{
-  height: 100vh;
+  /* height: 100vh; */
   /* width: 100%; */
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  background: linear-gradient(45deg, rgb(244, 211, 192) 60%, rgb(241, 195, 169) 40.1%);
+  background: linear-gradient(35deg, rgb(244, 211, 192) 60%, rgb(90, 36, 2) 40%);
   /* background-color: #f2f2f2; */
   overflow-x: hidden;
+  /* background-repeat: repeat-y; */
 } 
+#empty{
+  height: 30px;
+}
+
 
 .toast{
   position: absolute;
@@ -145,7 +151,7 @@ body{
 
 .container {
   padding:20px;
-  margin-top: 60px;
+  margin-top: 40px;
   /* padding-top: 50px; */
   width:650px;
  

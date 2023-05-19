@@ -425,14 +425,14 @@ font-size: 20px;
  
 }
 
-@media screen and (max-width: 850px) {
+/* @media screen and (max-width: 850px) {
   #subfooter1{
     display: grid;
     grid-template-columns: repeat(2,1fr);
   }
 
-}
-@media screen and (max-width: 970px) {
+} */
+@media screen and (max-width: 800px) {
 
   #subfooter1{
     display: grid;
@@ -449,19 +449,22 @@ font-size: 20px;
   #childfooter1{
     width: 45%;
     padding: 0;
-    border: 2px solid white;
+    /* border: 2px solid white; */
   }
   #childfooter2{
     width: 45%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
   }
   #childfooter3{
     width: 45%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
   }
   #childfooter4{
     width: 45%;
-    border: 2px solid white;
+    /* border: 2px solid white; */
+  }
+  i{
+    opacity: 0;
   }
 }
 
