@@ -1,0 +1,118 @@
+#mainContainer {
+  text-align: center;
+}
+
+#mainContainer h1 {
+  margin-top: 10%;
+  font-size: 37px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: rgb(100, 42, 42);
+}
+#mainContainer p {
+  color: rgb(100, 42, 42);
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 60%;
+  margin: auto;
+  align-items: center;
+}
+
+#container {
+  width: 1200px;
+  min-width: 600px;
+  /* background: #262626; */
+  margin: 70px auto 0;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-left: 20px;
+  margin: auto;
+  align-items: center;
+}
+
+#container .box {
+  position: relative;
+  width: 370px;
+  height: 250px;
+  background: rgb(0, 0, 0);
+  margin: 15px;
+  box-sizing: border-box;
+  display: inline-block;
+}
+
+.imgBox {
+  position: relative;
+  overflow: hidden;
+}
+.imgBox img {
+  max-width: 100%;
+  transition: transform 1s;
+}
+
+.imgBox:hover img {
+  transform: scale(1.2);
+}
+.address {
+  margin-top: -20px;
+  margin-bottom: -45px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  padding-left: 20px;
+  font-size: 32px;
+  color: rgb(100, 42, 42);
+}
+
+.other {
+  color: rgb(100, 42, 42);
+  font-size: 20px;
+  margin-left: 24px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  margin-top: -20px;
+  width: 87%;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.main .box .detalis {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scaleY(0);
+  transition: transform 0.5s;
+}
+
+.main .box:hover .detalis {
+  transform: scaleY(1);
+}
+.main .box .detalis .content {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.detalis img {
+  height: 20px;
+}
+
+#navbar {
+  display: flex;
+  justify-content: center;
+}
+
+#navbar button {
+  border: solid 1px red;
+  cursor: pointer;
+  border: none;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: white;
+  /* margin-left: 5px;
+  margin-right: 5px; */
+  font-size: 25px;
+}

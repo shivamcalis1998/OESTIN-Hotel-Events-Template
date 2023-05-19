@@ -1,0 +1,47 @@
+{
+  "events": [
+    {
+      "id": "1",
+      "tag": "MANAGEMENT CONFERENCES",
+      "image": "https://htmldemo.net/oestin/oestin/img/event/1.jpg",
+      "By": "Jhtyg Hyuir",
+      "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+    },
+
+    {
+      "id": "2",
+      "tag": "MUSIC CONCERT",
+      "image": "https://htmldemo.net/oestin/oestin/img/event/2.jpg",
+      "By": "Jhon Doe",
+      "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+    },
+    {
+      "id": "3",
+      "tag": "BIRTHDAY PARTY",
+      "image": "https://htmldemo.net/oestin/oestin/img/event/3.jpg",
+      "By": "Marry Luis",
+      "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+    },
+    {
+      "id": "4",
+      "tag": "WEEDING PARTY",
+      "image": "https://htmldemo.net/oestin/oestin/img/event/4.jpg",
+      "By": "Kathy Luis",
+      "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+    },
+    {
+      "id": "5",
+      "tag": "MANAGEMENT CONFERENCES",
+      "image": "https://htmldemo.net/oestin/oestin/img/event/5.jpg",
+      "By": "Dan Brown",
+      "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+    },
+    {
+      "id": "6",
+      "tag": "PHOTOGRAPHY",
+      "image": "https://htmldemo.net/oestin/oestin/img/event/6.jpg",
+      "By": "Khaled Hossaini",
+      "para": "Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt"
+    }
+  ]
+}
