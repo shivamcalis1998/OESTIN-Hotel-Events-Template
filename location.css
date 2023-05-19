@@ -116,3 +116,9 @@
   margin-right: 5px; */
   font-size: 25px;
 }
+
+.address:hover {
+  cursor: pointer;
+  color: rgb(121, 185, 164);
+  transition: 0.3s;
+}
