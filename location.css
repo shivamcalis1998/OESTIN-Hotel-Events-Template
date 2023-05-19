@@ -40,6 +40,9 @@
   display: inline-block;
 }
 
+body {
+  font-family: "Open Sans", sans-serif;
+}
 .imgBox {
   position: relative;
   overflow: hidden;

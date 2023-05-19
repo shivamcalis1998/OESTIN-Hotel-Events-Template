@@ -535,12 +535,14 @@ button4.textContent = "4";
 
 nav.append(button1, button2, button3, button4);
 eventNav.append(nav);
-
+let btn1 = document.getElementById("btn1");
+btn1.style.fontSize = "2.8em";
+btn1.style.color = " rgb(189, 176, 160)";
 document.getElementById("btn1").addEventListener("click", display1);
 
 function display1() {
   let btn1 = document.getElementById("btn1");
-  btn1.style.fontSize = "2.5em";
+  btn1.style.fontSize = "2.8em";
   btn1.style.color = " rgb(189, 176, 160)";
   let btn2 = document.getElementById("btn2");
   btn2.style.fontSize = "25px";
@@ -604,7 +606,7 @@ document.getElementById("btn2").addEventListener("click", display2);
 
 function display2() {
   let btn2 = document.getElementById("btn2");
-  btn2.style.fontSize = "2.5em";
+  btn2.style.fontSize = "2.8em";
   btn2.style.color = " rgb(189, 176, 160)";
   let btn1 = document.getElementById("btn1");
   btn1.style.fontSize = "25px";
@@ -668,7 +670,7 @@ document.getElementById("btn3").addEventListener("click", display3);
 
 function display3() {
   let btn3 = document.getElementById("btn3");
-  btn3.style.fontSize = "2.5em";
+  btn3.style.fontSize = "2.8em";
   btn3.style.color = " rgb(189, 176, 160)";
   let btn2 = document.getElementById("btn2");
   btn2.style.fontSize = "25px";
@@ -732,7 +734,7 @@ document.getElementById("btn4").addEventListener("click", display4);
 
 function display4() {
   let btn4 = document.getElementById("btn4");
-  btn4.style.fontSize = "2.5em";
+  btn4.style.fontSize = "2.8em";
   btn4.style.color = " rgb(189, 176, 160)";
   let btn2 = document.getElementById("btn2");
   btn2.style.fontSize = "25px";
