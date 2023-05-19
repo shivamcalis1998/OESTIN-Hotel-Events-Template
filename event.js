@@ -61,11 +61,12 @@ function all() {
   let subDiv = document.createElement("div");
   subDiv.setAttribute("class", "image__overlay");
   let div1 = document.createElement("div");
-  let a = document.createElement("a");
-  a.append(div1);
-  a.href = "location.html";
+  let a1 = document.createElement("a");
+  a1.append(div1);
+  a1.href = "location.html";
   div1.setAttribute("class", "image__title");
   div1.textContent = events[0].tag;
+  a1.append(div1);
   let div2 = document.createElement("div");
   div2.setAttribute("class", "image__title2");
   div2.textContent = `By: ${events[0].By}`;
@@ -73,7 +74,7 @@ function all() {
   p.setAttribute("class", "image__description");
   p.textContent =
     " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt";
-  subDiv.append(div1, div2, p);
+  subDiv.append(a1, div2, p);
   divimg1.append(image, subDiv);
 
   let divimg2 = document.createElement("div");
@@ -83,9 +84,13 @@ function all() {
   image1.src = "2.jpeg";
   let subDiv2 = document.createElement("div");
   subDiv2.setAttribute("class", "image__overlay");
+
   let div3 = document.createElement("div");
   div3.setAttribute("class", "image__title");
   div3.textContent = events[1].tag;
+  let a2 = document.createElement("a");
+  a2.append(div3);
+  a2.href = "location.html";
   let div4 = document.createElement("div");
   div4.setAttribute("class", "image__title2");
   div4.textContent = `By: ${events[1].By}`;
@@ -93,7 +98,7 @@ function all() {
   p2.setAttribute("class", "image__description");
   p2.textContent =
     " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt";
-  subDiv2.append(div3, div4, p2);
+  subDiv2.append(a2, div4, p2);
   divimg2.append(image1, subDiv2);
 
   mainDiv.append(divimg1, divimg2);
@@ -111,6 +116,9 @@ function all() {
   let div5 = document.createElement("div");
   div5.setAttribute("class", "image__title");
   div5.textContent = `${events[2].tag}`;
+  let a3 = document.createElement("a");
+  a3.append(div5);
+  a3.href = "location.html";
   let div6 = document.createElement("div");
   div6.setAttribute("class", "image__title2");
   div6.textContent = `By: ${events[2].By}`;
@@ -118,7 +126,7 @@ function all() {
   p3.setAttribute("class", "image__description");
   p3.textContent =
     " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt";
-  subDiv3.append(div5, div6, p3);
+  subDiv3.append(a3, div6, p3);
   divimg3.append(image3, subDiv3);
 
   let divimg4 = document.createElement("div");
@@ -131,6 +139,9 @@ function all() {
   let div7 = document.createElement("div");
   div7.setAttribute("class", "image__title");
   div7.textContent = events[3].tag;
+  let a4 = document.createElement("a");
+  a4.append(div7);
+  a4.href = "location.html";
   let div8 = document.createElement("div");
   div8.setAttribute("class", "image__title2");
   div8.textContent = `By: ${events[3].By}`;
@@ -138,7 +149,7 @@ function all() {
   p4.setAttribute("class", "image__description");
   p4.textContent =
     " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt";
-  subDiv4.append(div7, div8, p4);
+  subDiv4.append(a4, div8, p4);
   divimg4.append(image4, subDiv4);
 
   mainDiv2.append(divimg3, divimg4);
@@ -156,6 +167,9 @@ function all() {
   let div9 = document.createElement("div");
   div9.setAttribute("class", "image__title");
   div9.textContent = `${events[4].tag}`;
+  let a5 = document.createElement("a");
+  a5.append(div9);
+  a5.href = "location.html";
   let div10 = document.createElement("div");
   div10.setAttribute("class", "image__title2");
   div10.textContent = `By: ${events[4].By}`;
@@ -163,7 +177,7 @@ function all() {
   p5.setAttribute("class", "image__description");
   p5.textContent =
     " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt";
-  subDiv5.append(div9, div10, p5);
+  subDiv5.append(a5, div10, p5);
   divimg5.append(image5, subDiv5);
 
   let divimg6 = document.createElement("div");
@@ -177,13 +191,16 @@ function all() {
   div11.setAttribute("class", "image__title");
   div11.textContent = events[5].tag;
   let div12 = document.createElement("div");
+  let a6 = document.createElement("a");
+  a6.append(div11);
+  a6.href = "location.html";
   div12.setAttribute("class", "image__title2");
   div12.textContent = `By: ${events[5].By}`;
   let p6 = document.createElement("p");
   p6.setAttribute("class", "image__description");
   p6.textContent =
     " Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed doeiusmod tempor incididunt";
-  subDiv6.append(div11, div12, p6);
+  subDiv6.append(a6, div12, p6);
   divimg6.append(image6, subDiv6);
 
   mainDiv3.append(divimg5, divimg6);
