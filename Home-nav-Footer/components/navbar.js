@@ -25,7 +25,7 @@ const navbar = () => {
       <input type="radio" name="slider" id="close-btn">
       <ul class="nav-links">
        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-       <li><a href="#">HOME</a></li>
+       <li><a href="/Oestin/Home-nav-Footer/navbar.html">HOME</a></li>
        <li>
          <a href="#" class="desktop-item">ROOM</a>
          <input type="checkbox" id="showDrop">
@@ -71,8 +71,8 @@ const navbar = () => {
            </div>
          </div>
        </li>
-       <li><a href="#">LOCATION</a></li>
-       <li><a href="#">EVENT</a></li>
+       <li><a href="/Oestin/location.html">LOCATION</a></li>
+       <li><a href="/Oestin/event.html">EVENT</a></li>
        <li><a href="#">TEAM</a></li>
        <li><a href="#">CONTACT</a></li>
 
