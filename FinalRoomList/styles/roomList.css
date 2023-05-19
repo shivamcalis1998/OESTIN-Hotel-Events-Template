@@ -36,13 +36,39 @@
     
 }
 #chargs h2 {
-    color: rgb(207, 129, 27);
+    color: white;
     font-family: sans-serif;
-    text-align: right;
-    margin-right: 5%;
+    text-align: center;
+    /* margin-right: 5%; */
+    margin: auto;
     
 
     
+}
+
+#chargs {
+background-color: rgb(181,135,109);
+width: 20%;
+height: auto;
+margin-left: 80%;
+padding: 10px;
+text-align: center;
+margin-top: 24px;
+/* opacity: 0; */
+    
+
+    
+}
+
+#block:hover{
+    opacity: 1;
+
+}
+#block{
+    background-color: white;
+    width: 100%;
+    height: auto;
+    opacity: 0;
 }
 
 
