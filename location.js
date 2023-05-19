@@ -583,9 +583,7 @@ function display1() {
     addDiv.className = "address";
 
     let p1 = document.createElement("p");
-    // let firstHed = el.heading1;
-    // firstHed.slice(0, 1);
-    // console.log(firstHed);
+
     p1.textContent = el.heading1.slice(0, 26);
     addDiv.append(p1);
 
@@ -601,8 +599,6 @@ function display1() {
     main.append(mainBox, addDiv, other);
     mainDiv.append(main);
   });
-  // console.log(mainDiv);
-  // mainDiv.append(main1);
 }
 document.getElementById("btn2").addEventListener("click", display2);
 
@@ -651,9 +647,7 @@ function display2() {
     addDiv.className = "address";
 
     let p1 = document.createElement("p");
-    // let firstHed = el.heading1;
-    // firstHed.slice(0, 1);
-    // console.log(firstHed);
+
     p1.textContent = el.heading1.slice(0, 26);
     addDiv.append(p1);
 
@@ -661,7 +655,7 @@ function display2() {
     other.className = "other";
 
     let p2 = document.createElement("p");
-    p2.textContent = `West Road, ${el.headig2}`;
+    p2.textContent = `West Road, ${el.heading2}`;
 
     let p3 = document.createElement("p");
     p3.textContent = `${Math.floor(Math.random() * 10 + 1)} kilometer`;
@@ -717,9 +711,7 @@ function display3() {
     addDiv.className = "address";
 
     let p1 = document.createElement("p");
-    // let firstHed = el.heading1;
-    // firstHed.slice(0, 1);
-    // console.log(firstHed);
+
     p1.textContent = el.heading1.slice(0, 25);
     addDiv.append(p1);
 
@@ -727,7 +719,7 @@ function display3() {
     other.className = "other";
 
     let p2 = document.createElement("p");
-    p2.textContent = `West Road, ${el.headig2}`;
+    p2.textContent = `West Road, ${el.heading2}`;
 
     let p3 = document.createElement("p");
     p3.textContent = `${Math.floor(Math.random() * 10 + 1)} kilometer`;
@@ -783,9 +775,6 @@ function display4() {
     addDiv.className = "address";
 
     let p1 = document.createElement("p");
-    // let firstHed = el.heading1;
-    // firstHed.slice(0, 1);
-    // console.log(firstHed);
     p1.textContent = el.heading1.slice(0, 26);
     addDiv.append(p1);
 
@@ -793,7 +782,7 @@ function display4() {
     other.className = "other";
 
     let p2 = document.createElement("p");
-    p2.textContent = `West Road, ${el.headig2}`;
+    p2.textContent = `West Road, ${el.heading2}`;
 
     let p3 = document.createElement("p");
     p3.textContent = `${Math.floor(Math.random() * 10 + 1)} kilometer`;
