@@ -61,6 +61,9 @@ function all() {
   let subDiv = document.createElement("div");
   subDiv.setAttribute("class", "image__overlay");
   let div1 = document.createElement("div");
+  let a = document.createElement("a");
+  a.append(div1);
+  a.href = "location.html";
   div1.setAttribute("class", "image__title");
   div1.textContent = events[0].tag;
   let div2 = document.createElement("div");
