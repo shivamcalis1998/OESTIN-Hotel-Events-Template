@@ -2483,15 +2483,15 @@ let tagarr = [
   " Live in the lap of luxury with us.",
 ];
 
-let i = 0;
 function tagFun() {
-  setInterval(() => {
+    let i = 0;
+  setInterval(() => { 
+    if (i == tagarr.length ) {
+      i = 0;
+    }
     tag.innerHTML = tagarr[i];
     i++;
-  }, 3000);
-  if (i == tagarr.length) {
-    i == 0;
-  }
+  }, 2000);
 }
 tagFun();
 
@@ -2547,7 +2547,7 @@ function display_data(arr) {
     div7_p2.textContent = ele.price2;
     div7_p2.setAttribute("id", "div7_div_p2");
 
-    div4.append(name, div7_p1,city, detail);
+    div4.append(name, div7_p1, city, detail);
 
     div3.append(div4);
 
@@ -2583,52 +2583,58 @@ function display_data(arr) {
   });
 }
 
-display_data(obj.pune);
-
+display_data(obj.delhi);
 
 //search function
 let input = document.getElementById("inputbox");
 input.addEventListener("input", searchFun);
 
-
+// let searchBtn = document.getElementById("searchBtn")
+// searchBtn.addEventListener("click",searchFun)
+var brr;
 function searchFun() {
+  // localStorage.setItem("city", JSON.stringify(input.value.toLowerCase()));
   if (input.value.toLowerCase() == "delhi") {
     display_data(obj.delhi);
+  brr = obj.delhi;
   } else if (input.value.toLowerCase() == "goa") {
     display_data(obj.goa);
+   brr = obj.goa;
   } else if (input.value.toLowerCase() == "pune") {
     display_data(obj.pune);
-  } else if (input.value.toLowerCase()== "mumbai") {
+    brr = obj.pune;
+  } else if (input.value.toLowerCase() == "mumbai") {
     display_data(obj.mumbai);
+    brr = obj.mumbai;
   }
 }
 
+let htl = document.getElementById("htl");
+htl.addEventListener("click", fun_price_htl);
 
- 
-let htl = document.getElementById("htl")
-htl.addEventListener("click",fun_price_htl)
- 
-var brr = obj.pune && obj.delhi ;
+// let city = JSON.parse(localStorage.getItem("city")) ;
+// let c= "delhi"; 
+// // var brr = obj.city;
+// console.log(obj.c);
+// console.log(city);
 
-function fun_price_htl(){
-    brr.sort(function(a,b){
-     return b.price2 - a.price2;
-    })
+
+function fun_price_htl() {
+  brr.sort(function (a, b) {
+    return b.price2 - a.price2;
+  });
   display_data(brr);
 }
 
-let lth = document.getElementById("lth")
-lth.addEventListener("click",fun_price_lth)
+let lth = document.getElementById("lth");
+lth.addEventListener("click", fun_price_lth);
 
-function fun_price_lth(){
-     brr.sort(function(a,b){
-      return a.price2 - b.price2;
-     })
-    display_data(brr);
+function fun_price_lth() {
+  brr.sort(function (a, b) {
+    return a.price2 - b.price2;
+  });
+  display_data(brr);
 }
-
-
-
 
 // function rating_func_htl(){
 //   let checkBox = document.getElementById("flexRadioDefault2_1");
@@ -2641,4 +2647,3 @@ function fun_price_lth(){
 //   }
 //   display_data(brr);
 // }
-
