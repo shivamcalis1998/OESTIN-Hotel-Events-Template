@@ -17,7 +17,7 @@
   align-items: center;
 }
 
-.container {
+#container {
   width: 1200px;
   min-width: 600px;
   /* background: #262626; */
@@ -30,11 +30,11 @@
   align-items: center;
 }
 
-.container .box {
+#container .box {
   position: relative;
   width: 370px;
   height: 250px;
-  background: #ff0;
+  background: rgb(0, 0, 0);
   margin: 15px;
   box-sizing: border-box;
   display: inline-block;
