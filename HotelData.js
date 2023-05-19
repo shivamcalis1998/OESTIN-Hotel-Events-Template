@@ -1191,8 +1191,9 @@ let obj = {
       city: "Goa",
       heading1: "Starhotels President",
       heading2: "Foce",
-      img1: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/dd0828d9.jpg?impolicy=resizecrop&rw=455&ra=fit",
-      img2: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/1da0ed3f.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      img1: "https://images.trvl-media.com/hotels/9000000/8320000/8317500/8317451/da102f18.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      img2: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/dd0828d9.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      // img1: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/1da0ed3f.jpg?impolicy=resizecrop&rw=455&ra=fit",
       img3: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/079cef43.jpg?impolicy=resizecrop&rw=455&ra=fit",
       img4: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/41ae53bd.jpg?impolicy=resizecrop&rw=455&ra=fit",
       text1: "Limited time offer - Grand Getaways",
@@ -2583,7 +2584,7 @@ function display_data(arr) {
   });
 }
 
-display_data(obj.delhi);
+display_data(obj.mumbai);
 
 //search function
 let input = document.getElementById("inputbox");
@@ -2591,7 +2592,7 @@ input.addEventListener("input", searchFun);
 
 // let searchBtn = document.getElementById("searchBtn")
 // searchBtn.addEventListener("click",searchFun)
-var brr;
+var brr= obj.mumbai;
 function searchFun() {
   // localStorage.setItem("city", JSON.stringify(input.value.toLowerCase()));
   if (input.value.toLowerCase() == "delhi") {
@@ -2635,6 +2636,19 @@ function fun_price_lth() {
   });
   display_data(brr);
 }
+
+// function rating_func_htl(){
+//   let checkBox = document.getElementById("flexRadioDefault2_1");
+//   if (checkBox.checked == true){
+//     brr.sort(function(a,b){
+//       if(a.rating != "" || b.rating != ""){
+//      return b.rating - a.rating;
+//       }
+//     })
+//   }
+//   display_data(brr);
+// }
+
 
 // function rating_func_htl(){
 //   let checkBox = document.getElementById("flexRadioDefault2_1");
