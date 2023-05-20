@@ -9,6 +9,20 @@ body {
 	line-height: normal;
     font-family: 'Lato', sans-serif;
 }
+#bookNowButton {
+  background: #b5876d none repeat scroll 0 0;
+  color: #ffffff;
+  font-family: "Raleway",sans-serif;
+  font-size: 14px;
+  font-weight: 700;
+  position: relative;
+  text-transform: uppercase;
+  transform: perspective(1px) translateZ(0px);
+  transition-duration: 0.2s;
+  transition-property: color;
+  vertical-align: middle;
+  display: inline-block;
+}
 .clear{clear:both}
 .fix {overflow: hidden}
 .block {display: block}
@@ -706,16 +720,7 @@ textarea:focus {
 .row {
   --bs-gutter-x: 30px;
 }
-/* -----------------------------------
-Template Name: Oestin
-Template URI: https://devitems.com/html/oestin-preview/
-Description: This is html5 template
-Author: HasTech
-Author URI: https://devitems.com/
-Version: 1.0
-NOTE: This is Footer style file. All footer related style included in this file.
 
---------------------------------------*/
 .footer-area {
     color: #f7f7f7;
   }

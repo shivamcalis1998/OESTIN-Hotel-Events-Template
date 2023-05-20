@@ -1,36 +1,4 @@
-/*-----------------------------------------------------------------------------------
-    
-    Template Name: Oestin
-    Template URI: https://devitems.com/html/oestin-preview/
-    Description: This is html5 template
-    Author: HasTech
-    Author URI: https://devitems.com/
-    Version: 1.0
-    
------------------------------------------------------------------------------------
-    
-    CSS INDEX
-    ===================
-	
-    1. About Area
-    2. Room Area
-    3. Services Area
-    4. Fun Factor Area
-    5. Gallery Area
-    6. Team Area
-    7. Advertise Area
-    8. Pricing Area
-    9. Blog Area
-    10. Client Area
-    11. Newsletter Area
-    12. Room Grid / List Page
-    13. Room Details Page
-    14. Location Page
-    15. Event Page
-    16. Contact Page
 
------------------------------------------------------------------------------------*/
-/* Global css */
 a {
     text-decoration: none;
   }
@@ -90,6 +58,14 @@ a {
     text-transform: uppercase;
     width: 182px;
   }
+  #bookNowButton {
+    border: 0 none;
+    color: #ffffff;
+    line-height: 48px;
+    text-transform: uppercase;
+    width: 182px;
+    margin-left: 25px;
+}
   
   .box-select .select {
     position: relative;
@@ -834,9 +810,9 @@ a {
     color: #bbbbbb;
   }
   
-  /*----------------------------------------*/
+  /* ----------------------------------------
   /*  9. Blog Area
-  /*----------------------------------------*/
+  /*----------------------------------------
   .single-blog-wrapper {
     position: relative;
     overflow: hidden;
@@ -994,7 +970,7 @@ a {
   .single-blog-wrapper:hover .blog-hover .default-btn {
     transition-delay: 2.3s;
   }
-  
+   */
   /*----------------------------------------*/
   /*  10. Client Area
   /*----------------------------------------*/
@@ -1123,7 +1099,8 @@ a {
   }
   
   .room-slider {
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    
   }
   
   .slider-nav {

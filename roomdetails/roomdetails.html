@@ -1,0 +1,450 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Oestin - Hotel & Resort HTML Template</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Favicon Icon -->
+    <!-- <link rel="shortcut icon" type="image/x-icon" href="img/favicon.ico"> -->
+
+    <!-- All css here -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css" integrity="sha512-wR4oNhLBHf7smjy0K4oqzdWumd+r5/+6QO/vDda76MW5iug4PT7v86FoEkySIJft3XA0Ae6axhIvHrqwm793Nw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font.css">
+    <link rel="stylesheet" href="css/shortcut.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/default.css">
+    <!-- <link rel="stylesheet" href="css/header.css"> -->
+    <!-- <link rel="stylesheet" href="css/footer.css"> -->
+    <link rel="stylesheet" href="css/animate.css">
+    <link rel="stylesheet" type="text/css" href="css/slick.css">
+
+    <!-- <link rel="stylesheet" href="css/slider.css">  -->
+    <!-- <link rel="stylesheet" href="css/meanmenu.css">  -->
+    <!-- <script src="js/vendor/modernizr-2.8.3.min.js"></script> -->
+   
+</head>
+
+<body>
+   
+    <!-- Breadcrumb Area Start--
+    <section class="breadcrumb-area overlay-dark-2 bg-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <div class="breadcrumb-text text-center">
+                        <h2>Room Details</h2>
+                        <p>A quality room of Oestin with sea or mountain view</p>
+                        <div class="breadcrumb-bar">
+                            <ul class="breadcrumb">
+                                <li><a href="index.html">Home</a></li>
+                                <li>Room Details</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!- Breadcrumb Area End -->
+
+    <!-- Room Details Area Start -->
+    
+
+    <section class="room-details pt-90">
+        
+        <div class="container">
+            <h1 id="heading"></h1>
+            <div class="row">
+                
+
+                <div class="col-xl-9 col-lg-8 col-12">
+                    <div class="room-slider-wrapper">
+                        <div class="room-slider slick-initialized slick-slider">
+                            <div aria-live="polite" class="slick-list draggable">
+                                <div class="slick-track" role="listbox" style="opacity: 1; width: 2170px;">
+                                    <div class="slider-image slick-slide slick-current slick-active" data-slick-index="0" aria-hidden="false" tabindex="-1" role="option" aria-describedby="slick-slide00" style="width: 434px; position: relative; left: 0px; top: 0px; z-index: 999; opacity: 1;">
+                                        <img src="" alt="" id="roomImage">
+                                        <div class="cost">
+                                            <h2>$ 350</h2>
+                                            <span>Per Night</span>
+                                        </div>
+                                    </div>
+                                    <!-- Add other slider images dynamically here -->
+                                </div>
+                            </div>
+                        </div>
+                        <div class="room-slider-container">
+                            <div class="room-slider">
+                              <!-- Image Slides will be dynamically added here -->
+                            </div>
+                            <div class="slider-controls">
+                              <button class="prev-button">&larr;</button>
+                              <button class="next-button">&rarr;</button>
+                            </div>
+                          </div>
+                          <style>
+                            
+                          </style>
+                        <div class="row nav-row">
+                            <div class="slider-nav slick-initialized slick-slider">
+                                <button type="button" data-role="none" class="slick-prev slick-arrow" aria-label="Previous" role="button" style="color: black;">Previous</button>
+                                <div aria-live="polite" class="slick-list draggable" style="padding: 0px 50px;">
+                                    <div class="slick-track" role="listbox" style="opacity: 1; width: 1605px; transform: translate3d(-321px, 0px, 0px);">
+                                        <!-- Add navigation thumbnails dynamically here -->
+                                    </div>
+                                </div>
+                                <button type="button" data-role="none" class="slick-next slick-arrow" aria-label="Next" role="button" style="color: black;">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                    <h3 class="heading"></h3>
+                    <div class="image-container"></div>
+                    <style>
+                        .room-slider-container {
+  position: relative;
+}
+
+.room-slider {
+  display: flex;
+  overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.room-slider::-webkit-scrollbar {
+  display: none;
+}
+
+.image-slide {
+  flex-shrink: 0;
+  scroll-snap-align: start;
+  width: 870px;
+  height: 500px; /* Set the desired height */
+  position: relative;
+  transition: transform 0.3s; /* Add transition for smooth animation */
+}
+
+.image-slide img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Ensure images fill the container and maintain aspect ratio */
+}
+
+.image-slide:hover {
+  transform: scale(1.05); /* Enlarge the image on hover */
+}
+
+.cost {
+  position: absolute;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px;
+}
+
+.cost h2 {
+  margin: 0;
+  font-size: 16px;
+}
+
+.cost span {
+  font-size: 12px;
+}
+
+.slider-controls {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+
+.prev-button,
+.next-button {
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  padding: 5px 10px;
+  font-size: 18px;
+  cursor: pointer;
+}
+
+.prev-button:hover,
+.next-button:hover {
+  background-color: #999;
+}
+
+
+
+                    </style>
+                    
+                
+           
+
+                <div class="room-details-text">
+                    <h3 class="room-details-title">description of room</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisi cing elit, sed do eius mod tempor incididunt ut labore et dolore magna aliqua. Ut the enim ad minim veniam, quis nostrud exer citation ullamco laboris nisi ut aliquip ex ea com modo conse quat. Duis aute irure dolor in reprehend erit in volupt ate velit esse cillum dolore eu fugiat nulla pari atur. Except eur sint occa ecat cupi datat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Sed ut perspiciatis unde omnis iste natus error sit volup tatem accusantium the doloremque lauda ntium, totam rem aper iam, eaque ipsa quae</p>
+                    <p>Nemo enim ipsam voluptatem quia volu ptas sit asper natur aut odit aut fugit, sed quia consequ untur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolo rem ipsum quia dolor sit amet, conse ctetur, adipisci velit, sed quia a non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incidi dunt ut labore et dolore magna aliqua. Ut new newenim ad im veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip</p>
+                </div>
+                <div class="room-facilities">
+                    <h3 class="room-details-title">room facilities</h3>
+                    <div class="single-facility">
+                        <span><i class="zmdi zmdi-check"></i>Single Room</span>
+                        <span><i class="zmdi zmdi-check"></i>70 sq mt</span>
+                        <span><i class="zmdi zmdi-check"></i>3 Persons</span>
+                        <span><i class="zmdi zmdi-check"></i>Free Internet</span>
+                    </div>
+                    <div class="single-facility">
+                        <span><i class="zmdi zmdi-check"></i>Breakfast Inclide</span>
+                        <span><i class="zmdi zmdi-close"></i>Free wi-fi</span>
+                        <span><i class="zmdi zmdi-check"></i>Private Balcony</span>
+                        <span><i class="zmdi zmdi-check"></i>Free Newspaper</span>
+                    </div>
+                    <div class="single-facility">
+                        <span><i class="zmdi zmdi-check"></i>Full AC</span>
+                        <span><i class="zmdi zmdi-close"></i>Flat Screen TV</span>
+                        <span><i class="zmdi zmdi-check"></i>Beach View</span>
+                        <span><i class="zmdi zmdi-close"></i>Room Service</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-3 col-lg-4 col-12">
+                <div class="sidebar-widget">
+                    <h3 class="room-details-title">your reservation</h3>
+                    <form action="#" method="post" class="search-form">
+                        <div class="form-container fix">
+                            <div class="box-select">
+                                <p style="font-weight: bolder;">Check-in Date</p>
+                                <div class="select date">
+                                    <input type="date" name="arrive">
+                                </div>
+                                <p style="font-weight: bolder;">Check-out Date</p>
+                                <div class="select date">
+                                    <input type="date" name="departure">
+                                </div>
+                                <!-- <p style="font-weight: bolder;">Adults</p> -->
+                                <div class="select arrow">
+                                    <select name="adults">
+                                        <option>ADULTS</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                                <!-- <p style="font-weight: bolder;">Children</p> -->
+                                <div class="select arrow">
+                                    <select name="children">
+                                        <option>CHILDREN</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                        <option>5</option>
+                                        <option>6</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button type="submit" class="search default-btn">Check Availability</button>
+                        </div>
+                        <div id="price2"></div>
+                        <button id="bookNowButton" style="display: none;">Book Now</button>
+                        </form>
+                    </form>
+                </div>
+                <div class="sidebar-widget">
+                    <div class="c-info-text">
+                        <p>If you have any question please don't hesitate to contact us</p>
+                    </div>
+                    <div class="c-info">
+                        <span><i class="zmdi zmdi-phone"></i></span>
+                        <span>0123456789<br>0123456789</span>
+                    </div>
+                    <div class="c-info">
+                        <span><i class="zmdi zmdi-email"></i></span>
+                        <span>demo@example.com<br>demo@example.com</span>
+                    </div>
+                </div>
+                <div class="sidebar-widget">
+                    <h3 class="room-details-title">popular posts</h3>
+                    <div class="post-content">
+                        <div class="post-img">
+                            <a href="#" class="block"><img src="img/sidebar/1.jpg" alt=""></a>
+                        </div>
+                        <div class="post-text">
+                            <h4><a href="#">post demo title</a></h4>
+                            <span>22 Dec, 2019</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-img">
+                            <a href="#" class="block"><img src="img/sidebar/2.jpg" alt=""></a>
+                        </div>
+                        <div class="post-text">
+                            <h4><a href="#">post demo title</a></h4>
+                            <span>10 Feb, 2019</span>
+                        </div>
+                    </div>
+                    <div class="post-content">
+                        <div class="post-img">
+                            <a href="#" class="block"><img src="img/sidebar/3.jpg" alt=""></a>
+                        </div>
+                        <div class="post-text">
+                            <h4><a href="#">post demo title</a></h4>
+                            <span>06 Mar, 2019</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="room-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-12">
+                    <h3 class="room-details-title">similar rooms</h3>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid overflow-hidden">
+            <div class="single-room small">
+                <img src="img/room/1.jpg" alt="">
+                <h3>Royal Suit</h3>
+                <div class="room-hover text-center">
+                    <div class="hover-text">
+                        <h3><a href="room-details.html">Royal Suit</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <div class="room-btn">
+                            <a href="room-details.html" class="default-btn">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="p-amount">
+                        <span>$220</span>
+                        <span class="count">Per Night</span>
+                    </div>
+                </div>
+            </div>
+            <div class="single-room large">
+                <img src="img/room/2.jpg" alt="">
+                <h3>Deluxe Suit</h3>
+                <div class="room-hover text-center">
+                    <div class="hover-text">
+                        <h3><a href="room-details.html">Deluxe Suit</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <div class="room-btn">
+                            <a href="room-details.html" class="default-btn">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="p-amount">
+                        <span>$150</span>
+                        <span class="count">Per Night</span>
+                    </div>
+                </div>
+            </div>
+            <div class="single-room small">
+                <img src="img/room/3.jpg" alt="">
+                <h3>Single Room</h3>
+                <div class="room-hover text-center">
+                    <div class="hover-text">
+                        <h3><a href="room-details.html">Single Room</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <div class="room-btn">
+                            <a href="room-details.html" class="default-btn">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="p-amount">
+                        <span>$120</span>
+                        <span class="count">Per Night</span>
+                    </div>
+                </div>
+            </div>
+            <div class="single-room medium">
+                <img src="img/room/4.jpg" alt="">
+                <h3>Double Room</h3>
+                <div class="room-hover text-center">
+                    <div class="hover-text">
+                        <h3><a href="room-details.html">Double Room</a></h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,</p>
+                        <div class="room-btn">
+                            <a href="room-details.html" class="default-btn">DETAILS</a>
+                        </div>
+                    </div>
+                    <div class="p-amount">
+                        <span>$100</span>
+                        <span class="count">Per Night</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <!-- Room Details Area End -->
+        <!-- Newsletter Area Start -->
+    <section class="newsletter-area bg-light">
+        <div class="container">
+            <div class="row">
+            <div class="col-xl-8 mx-auto col-12">
+                <div class="newsletter-container">
+                <h3>NewsLetter Sign-Up</h3>
+                <div class="newsletter-form">
+                    <form action="#" id="mc-form" class="mc-form fix">
+                    <input id="mc-email" type="email" name="email" placeholder="Enter your E-mail"/>
+                    <button id="mc-submit" type="submit" class="default-btn">subcribes</button>
+                    </form>
+                    <!-- mailchimp-alerts Start -->
+                    <div class="mailchimp-alerts">
+                    <div class="mailchimp-submitting"></div>
+                    <!-- mailchimp-submitting end -->
+                    <div class="mailchimp-success"></div>
+                    <!-- mailchimp-success end -->
+                    <div class="mailchimp-error"></div>
+                    <!-- mailchimp-error end -->
+                    </div>
+                    <!-- mailchimp-alerts end -->
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newsletter Area End -->
+    
+    <!-- All js here -->
+   
+    
+    <!-- <script src="scripts/jquery-3.6.0.min.js"></script> -->
+    <!-- <script src="scripts/jquery-migrate-3.3.2.min.js"></script> -->
+    <script src="scripts/bootstrap.min.js"></script>
+    <!-- <script src="scripts/owl.carousel.min.js"></script> -->
+    <!-- <script src="scripts/ajax-mail.js"></script> -->
+    <!-- <script src="scripts/jquery.ajaxchimp.min.js"></script> -->
+    <!-- <script src="scripts/jquery.meanmenu.js"></script> -->
+    <!-- <script src="scripts/jquery.counterup.min.js"></script> -->
+    <!-- <script src="scripts/waypoints.min.js"></script> -->
+    <!-- <script src="scripts/isotope.pkgd.min.js"></script> -->
+    <!-- <script src="scripts/imagesloaded.pkgd.min.js"></script> -->
+    <!-- <script src="scripts/jquery.magnific-popup.js"></script> -->
+    <!-- <script src="scripts/plugins.js"></script> -->
+    <!-- <script src="scripts/main.js"></script>  -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js" integrity="sha512-XtmMtDEcNz2j7ekrtHvOVR4iwwaD6o/FUJe6+Zq+HgcCsk3kj4uSQQR8weQ2QVj1o0Pk6PwYLohm206ZzNfubg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    
+    <script src="scripts/room.js"></script>
+    <script src="scripts/checkavailability.js"></script>
+    <!-- <script src="scripts/modernizr-2.8.3.min.js"></script> -->
+    
+
+</body>
+
+</html>
