@@ -31,8 +31,8 @@ const navbar = () => {
          <input type="checkbox" id="showDrop">
          <label for="showDrop" class="mobile-item">ROOM</label>
          <ul class="drop-menu">
-           <li><a href="#">ROOM LIST</a></li>
-           <li><a href="#">ROOM DETAILS</a></li>
+           <li><a href="/Oestin/FinalRoomList/roomlist.html">ROOM LIST</a></li>
+           <li><a href="/Oestin/HotelCard.html">ROOM GRID</a></li>
          </ul>
        </li>
        <li>
@@ -73,7 +73,7 @@ const navbar = () => {
        </li>
        <li><a href="/Oestin/location.html">LOCATION</a></li>
        <li><a href="/Oestin/event.html">EVENT</a></li>
-       <li><a href="#">TEAM</a></li>
+       <li><a href="/Oestin/Signup.html">ACCOUNT</a></li>
        <li><a href="#">CONTACT</a></li>
 
       </ul>

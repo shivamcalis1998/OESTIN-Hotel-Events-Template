@@ -4,6 +4,7 @@
   box-sizing: border-box;
   /* font-family: ; */
 }
+
 #mainSection {
   /* display: grid; */
   margin-top: 175px;
@@ -132,7 +133,7 @@ img {
   height: 30px;
   border: 2px solid #b5876d;
   border: 2px solid #585757;
-
+  transition: 0.4s ease;
   /* border-radius: 10px; */
   padding: 10px;
 }
