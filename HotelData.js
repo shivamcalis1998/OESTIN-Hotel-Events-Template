@@ -2584,6 +2584,7 @@ function display_data(arr) {
     let detail = document.createElement("button");
     detail.setAttribute("class", "detailbtn");
     detail.textContent = "Details";
+   
 
     let div5 = document.createElement("div");
     div5.setAttribute("id", "div5_id");
@@ -2627,7 +2628,7 @@ function display_data(arr) {
       };
       localStorage.setItem("Details", JSON.stringify(obj));
       // window.open("","_self");
-      location.href = "";
+      location.href = "roomdetails/roomdetails.html";
     });
   });
 }

@@ -20,7 +20,10 @@ a {
     position: relative;
     z-index: 2;
   }
-  
+  #price2>  a{
+    color: white;
+    text-decoration: none;
+  }
   .box-select .select {
     border: 1px solid #dddddd;
     float: left;
