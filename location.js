@@ -1,3 +1,49 @@
+import navbar from '../Oestin/Home-nav-Footer/components/navbar.js'
+document.getElementById("homepage-section1").innerHTML= navbar() 
+
+import footer from '../Oestin/Home-nav-Footer/components/footer.js'
+document.getElementById("footer").innerHTML= footer() 
+
+
+import secondfooter from '../Oestin/Home-nav-Footer/components/secondfooter.js'
+document.getElementById("secondfooter").innerHTML= secondfooter() 
+
+import infiniteSlider from '../Oestin/Home-nav-Footer/components/infiniteSlidelogo.js'
+document.getElementById("logos").innerHTML= infiniteSlider() 
+
+
+// navbar css
+
+window.addEventListener("scroll",()=>{
+  var scrolled  = window.scrollY;
+  // console.log(scrolled)
+  if(scrolled>150){
+
+      document.querySelector(".wrapperH").style.display= "none"
+      document.querySelector(".wrapperH").style.transition= "0.7s ease"
+      document.querySelector(".wrapper").style.height="80px"
+      document.querySelector(".wrapper").style.transition= "0.5s ease"
+      document.querySelector(".wrapper").style.backgroundColor= "black"
+      document.getElementById("changelogo").textContent= "OESTIN"
+      // document.getElementById("changelogo").style.backgroundColor= "rgba(0,0,0,.7)"
+      document.querySelector("#changelogo").style.transition= "0.5s ease"
+
+      // var arhant =document.getElementById("arhant")
+      // var sticky = navbar.offsetTop;
+      // navbar.classList.add("sticky")
+  }
+  if(scrolled<100){
+      document.querySelector(".wrapperH").style.display= "flex"
+      document.querySelector(".wrapper").style.height=""
+      document.querySelector(".wrapper").style.backgroundColor= " rgba(0,0,0,.7)"
+      document.getElementById("changelogo").textContent= "MENU"
+  }
+
+})
+
+// navbar css ends
+
+
 let dehli = [
   {
     id: 1,
@@ -519,7 +565,7 @@ mainContainer.append(h1, p);
 let eventNav = document.getElementById("evenNav");
 
 let nav = document.createElement("div");
-nav.setAttribute("id", "navbar");
+nav.setAttribute("id", "nvbar");
 let button1 = document.createElement("button");
 button1.setAttribute("id", "btn1");
 button1.textContent = "1";
@@ -586,7 +632,7 @@ function display1() {
 
     let p1 = document.createElement("p");
 
-    p1.textContent = el.heading1.slice(0, 26);
+    p1.textContent = el.heading1.slice(0, 23);
     addDiv.append(p1);
 
     let other = document.createElement("div");

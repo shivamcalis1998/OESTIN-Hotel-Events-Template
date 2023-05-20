@@ -1,3 +1,51 @@
+import navbar from './Home-nav-Footer/components/navbar.js'
+document.getElementById("homepage-section1").innerHTML= navbar() 
+
+import footer from './Home-nav-Footer/components/footer.js'
+document.getElementById("footer").innerHTML= footer() 
+
+// import infiniteSlider from './Home-nav-Footer/components/infiniteSlidelogo.js'
+// document.getElementById("logos").innerHTML= infiniteSlider() 
+
+import secondfooter from './Home-nav-Footer/components/secondfooter.js'
+document.getElementById("secondfooter").innerHTML= secondfooter() 
+
+
+
+
+
+window.addEventListener("scroll",()=>{
+  var scrolled  = window.scrollY;
+  // console.log(scrolled)
+  if(scrolled>150){
+
+      document.querySelector(".wrapperH").style.display= "none"
+      document.querySelector(".wrapperH").style.transition= "0.7s ease"
+      document.querySelector(".wrapper").style.height="80px"
+      document.querySelector(".wrapper").style.transition= "0.5s ease"
+      document.querySelector(".wrapper").style.backgroundColor= "black"
+      document.getElementById("changelogo").textContent= "OESTIN"
+      // document.getElementById("changelogo").style.backgroundColor= "rgba(0,0,0,.7)"
+      document.querySelector("#changelogo").style.transition= "0.5s ease"
+
+      // var arhant =document.getElementById("arhant")
+      // var sticky = navbar.offsetTop;
+      // navbar.classList.add("sticky")
+  }
+  if(scrolled<100){
+      document.querySelector(".wrapperH").style.display= "flex"
+      document.querySelector(".wrapper").style.height=""
+      document.querySelector(".wrapper").style.backgroundColor= " rgba(0,0,0,.7)"
+      document.getElementById("changelogo").textContent= "MENU"
+  }
+
+})
+
+
+
+
+
+
 let obj = {
   delhi: [
     {
@@ -1191,8 +1239,9 @@ let obj = {
       city: "Goa",
       heading1: "Starhotels President",
       heading2: "Foce",
-      img1: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/dd0828d9.jpg?impolicy=resizecrop&rw=455&ra=fit",
-      img2: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/1da0ed3f.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      img1: "https://images.trvl-media.com/hotels/9000000/8320000/8317500/8317451/da102f18.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      img2: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/dd0828d9.jpg?impolicy=resizecrop&rw=455&ra=fit",
+      // img1: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/1da0ed3f.jpg?impolicy=resizecrop&rw=455&ra=fit",
       img3: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/079cef43.jpg?impolicy=resizecrop&rw=455&ra=fit",
       img4: "https://images.trvl-media.com/hotels/1000000/10000/4700/4620/41ae53bd.jpg?impolicy=resizecrop&rw=455&ra=fit",
       text1: "Limited time offer - Grand Getaways",
@@ -2483,15 +2532,15 @@ let tagarr = [
   " Live in the lap of luxury with us.",
 ];
 
-let i = 0;
 function tagFun() {
-  setInterval(() => {
+    let i = 0;
+  setInterval(() => { 
+    if (i == tagarr.length ) {
+      i = 0;
+    }
     tag.innerHTML = tagarr[i];
     i++;
-  }, 3000);
-  if (i == tagarr.length) {
-    i == 0;
-  }
+  }, 2000);
 }
 tagFun();
 
@@ -2535,6 +2584,7 @@ function display_data(arr) {
     let detail = document.createElement("button");
     detail.setAttribute("class", "detailbtn");
     detail.textContent = "Details";
+   
 
     let div5 = document.createElement("div");
     div5.setAttribute("id", "div5_id");
@@ -2547,7 +2597,7 @@ function display_data(arr) {
     div7_p2.textContent = ele.price2;
     div7_p2.setAttribute("id", "div7_div_p2");
 
-    div4.append(name, div7_p1,city, detail);
+    div4.append(name, div7_p1, city, detail);
 
     div3.append(div4);
 
@@ -2583,52 +2633,58 @@ function display_data(arr) {
   });
 }
 
-display_data(obj.pune);
-
+display_data(obj.mumbai);
 
 //search function
 let input = document.getElementById("inputbox");
 input.addEventListener("input", searchFun);
 
-
+// let searchBtn = document.getElementById("searchBtn")
+// searchBtn.addEventListener("click",searchFun)
+var brr= obj.mumbai;
 function searchFun() {
+  // localStorage.setItem("city", JSON.stringify(input.value.toLowerCase()));
   if (input.value.toLowerCase() == "delhi") {
     display_data(obj.delhi);
+  brr = obj.delhi;
   } else if (input.value.toLowerCase() == "goa") {
     display_data(obj.goa);
+   brr = obj.goa;
   } else if (input.value.toLowerCase() == "pune") {
     display_data(obj.pune);
-  } else if (input.value.toLowerCase()== "mumbai") {
+    brr = obj.pune;
+  } else if (input.value.toLowerCase() == "mumbai") {
     display_data(obj.mumbai);
+    brr = obj.mumbai;
   }
 }
 
+let htl = document.getElementById("htl");
+htl.addEventListener("click", fun_price_htl);
 
- 
-let htl = document.getElementById("htl")
-htl.addEventListener("click",fun_price_htl)
- 
-var brr = obj.pune && obj.delhi ;
+// let city = JSON.parse(localStorage.getItem("city")) ;
+// let c= "delhi"; 
+// // var brr = obj.city;
+// console.log(obj.c);
+// console.log(city);
 
-function fun_price_htl(){
-    brr.sort(function(a,b){
-     return b.price2 - a.price2;
-    })
+
+function fun_price_htl() {
+  brr.sort(function (a, b) {
+    return b.price2 - a.price2;
+  });
   display_data(brr);
 }
 
-let lth = document.getElementById("lth")
-lth.addEventListener("click",fun_price_lth)
+let lth = document.getElementById("lth");
+lth.addEventListener("click", fun_price_lth);
 
-function fun_price_lth(){
-     brr.sort(function(a,b){
-      return a.price2 - b.price2;
-     })
-    display_data(brr);
+function fun_price_lth() {
+  brr.sort(function (a, b) {
+    return a.price2 - b.price2;
+  });
+  display_data(brr);
 }
-
-
-
 
 // function rating_func_htl(){
 //   let checkBox = document.getElementById("flexRadioDefault2_1");
@@ -2642,3 +2698,15 @@ function fun_price_lth(){
 //   display_data(brr);
 // }
 
+
+// function rating_func_htl(){
+//   let checkBox = document.getElementById("flexRadioDefault2_1");
+//   if (checkBox.checked == true){
+//     brr.sort(function(a,b){
+//       if(a.rating != "" || b.rating != ""){
+//      return b.rating - a.rating;
+//       }
+//     })
+//   }
+//   display_data(brr);
+// }

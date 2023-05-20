@@ -1,0 +1,227 @@
+#header{
+    text-align: center;
+    margin-top: 100px;
+    
+    font-family: sans-serif ;
+    color: #444444;
+    
+}
+
+#header2{
+    
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+    font-family: sans-serif ;
+    color: #444444;
+    
+}
+#secondImage >div >div h3{
+    text-align: left;
+    margin-left: 50px;
+    margin-top: 50px;
+    font-family: sans-serif ;
+    color: #444444;
+     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  */
+    
+}
+
+#secondImage >div >div:hover{
+
+     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; 
+     width: 100%;
+    
+     text-align: center;
+    
+}
+#chargs h2 {
+    color: rgb(207, 129, 27);
+    font-family: sans-serif;
+    text-align: right;
+    margin-right: 5%;
+    
+
+    
+}
+
+
+#secondImage >div >div p{
+    text-align: left;
+    margin-left: 50px;
+    width: 90%;
+    font-family: sans-serif ;
+    color: #444444;
+}
+#secondImage >div >div p ~ p{
+    text-align: left;
+    width: 65%;
+    font-family:system-ui ;
+    color: #444444;
+}
+
+
+
+
+
+
+
+#secondImage {
+    width: 100%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(1,1fr);
+    gap: 10px;
+    text-align: center;
+    
+}
+
+
+/* #footImage {
+    width: 45%;
+    display: grid;
+    margin: auto;
+    grid-template-columns: repeat(5,1fr);
+    gap: 10px;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px;
+    color: #444444;
+    
+} */
+
+ #secondImage   > div{
+     /* box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;  */
+     text-align: center; 
+     margin-left: 7%;
+     padding: 20px; 
+    /* border-radius: 10px; */
+} 
+
+#secondImage   > div > a{
+    width: auto;
+    padding-left: 2%;
+
+   
+    
+}
+
+
+#secondImage > div{
+    display: flex;
+    text-align: center;
+
+}
+
+#secondImage > div p{
+    width: 100%;
+    margin: auto;
+
+}
+
+#secondImage > div a{
+ text-decoration: none;
+
+}
+
+#foot {
+    
+   width: 5%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   margin-top: 50px;
+   margin-left: 50%;
+   color: #444444;
+   font-family: sans-serif;
+}
+#foot a h3 {
+    color: #444444;
+    font-family: sans-serif;
+   
+}
+
+#foot a h3:hover {
+    color: rgb(207, 129, 27);
+
+   
+}
+#foot a h2 {
+    color: #444444;
+    font-family: sans-serif;
+    color: rgb(207, 129, 27);
+   
+}
+#foot a {
+    text-decoration: none;
+    /* font-family: sans-serif; */
+   
+}
+
+#text h3:hover {
+    color: rgb(207, 129, 27);
+
+   
+}
+#input {
+display: flex;
+gap: 50px;
+border: 1px solid;
+background-color: #F8F9Fa;
+color: #444444;
+border: none;
+padding: 50px 20px 50px 30%;
+   
+}
+
+#input input {
+    width: 20%;
+    height: 30px;
+    margin-top: 25px;;
+    margin-left: 10px;
+
+}
+.main-menu ul li a {
+    color: #ffffff;
+    position: relative;
+}
+a {
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/* @media only screen and (min-width: 421px) and (max-width: 720px) {
+
+    #secondImage {
+          grid-template-columns: repeat(2,1fr);
+    }
+} */
+
+
+
+
+/* @media only screen and (min-width: 421px) and (max-width: 720px) {
+
+    #footImage {
+          grid-template-columns: repeat(2,1fr);
+    }
+    #secondImage > div >div {
+        grid-template-columns: repeat(2,1fr);
+  }
+}
+
+
+@media only screen and (min-width: 0px) and (max-width: 420px) {
+
+    #footImage {
+          grid-template-columns: repeat(1,1fr);
+    }
+    #text {
+        grid-template-columns: repeat(1,1fr);
+    }
+
+} */
