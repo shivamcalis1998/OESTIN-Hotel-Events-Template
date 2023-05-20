@@ -541,12 +541,12 @@ textarea:focus {
 	background-size: cover; 
 	position: relative; 
 }
-.bg-1 { background-image: url(../../img/bg/1.jpg);}
-.bg-2 { background-image: url("../../img/bg/2.jpg");}
-.bg-3 { background-image: url("D:\oestin\Oestin\roomdetails\img\bg\3.jpg");}
-.bg-4 { background-image: url("../../img/bg/3.jpg");}
+.bg-1 { background-image: url("img/bg/3.jpg");}
+.bg-2 { background-image: url("img/bg/3.jpg");}
+.bg-3 { background-image: url("img/bg/3.jpg");}
+.bg-4 { background-image: url("img/bg/3.jpg");}
 .bg-5 { 
-    background-image: url("../../img/bg/5.jpg");
+    background-image: url("img/bg/3.jpg");
     background-position: 51% bottom; 
 }
 .overlay, .overlay-dark, .overlay-dark-2{ 
