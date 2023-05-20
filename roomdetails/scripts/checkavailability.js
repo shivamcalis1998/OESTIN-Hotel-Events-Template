@@ -62,7 +62,7 @@ function calculatePrice(arriveDate, departureDate) {
 
   bookNowButton.addEventListener("click", function() {
     // Redirect to the payment page
-    window.location.href = "";
+    window.location.href = "/Oestin/payment gateway/payment.html";
   });
 }
 
