@@ -2578,7 +2578,7 @@ function display_data(arr) {
       };
       localStorage.setItem("Details", JSON.stringify(obj));
       // window.open("","_self");
-      location.href = "";
+      location.href = "roomdetails/roomdetails.html";
     });
   });
 }
