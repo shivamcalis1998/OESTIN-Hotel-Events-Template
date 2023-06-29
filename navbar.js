@@ -31,7 +31,7 @@ const navbar = () => {
          <input type="checkbox" id="showDrop">
          <label for="showDrop" class="mobile-item">ROOM</label>
          <ul class="drop-menu">
-           <li><a href="../Oestin/FinalRoomList/roomlist.html">ROOM LIST</a></li>
+           <li><a href="./FinalRoomList/roomlist.html">ROOM LIST</a></li>
            <li><a href="./HotelCard.html">ROOM GRID</a></li>
          </ul>
        </li>

@@ -113,3 +113,8 @@ document.getElementById("secondfooter").innerHTML= secondfooter()
 
   var copy = document.querySelector(".logos-slide").cloneNode(true);
       document.querySelector(".logos").appendChild(copy);
+
+	  var loader = document.getElementById("preloader");
+	  window.addEventListener("load", function(){
+		loader.style.display = "none";
+	  })

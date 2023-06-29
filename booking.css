@@ -577,3 +577,13 @@ font-size: 20px;
   color: rgb(181,135,109);
 
 }
+
+
+#preloader{
+  background: rgb(25,31,38) url(https://www.icegif.com/wp-content/uploads/loading-icegif.gif) no-repeat center center;
+  background-size: 25%;
+  height: 100vh;
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+}

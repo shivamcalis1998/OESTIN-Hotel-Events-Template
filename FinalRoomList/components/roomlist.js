@@ -71,9 +71,9 @@ const navbar = () => {
            </div>
          </div>
        </li>
-       <li><a href="#">LOCATION</a></li>
-       <li><a href="#">EVENT</a></li>
-       <li><a href="#">TEAM</a></li>
+       <li><a href="/Oestin/location.html">LOCATION</a></li>
+       <li><a href="/Oestin/event.html">EVENT</a></li>
+       <li><a href="/Oestin/Signup.html">ACCOUNT</a></li>
        <li><a href="#">CONTACT</a></li>
 
       </ul>
