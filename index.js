@@ -1,13 +1,13 @@
-import navbar from '../components/navbar.js'
+import navbar from './navbar.js'
 document.getElementById("homepage-section1").innerHTML= navbar() 
 
-import footer from '../components/footer.js'
+import footer from './footer.js'
 document.getElementById("footer").innerHTML= footer() 
 
-import infiniteSlider from '../components/infiniteSlidelogo.js'
+import infiniteSlider from './infiniteSlidelogo.js'
 document.getElementById("logos").innerHTML= infiniteSlider() 
 
-import secondfooter from '../components/secondfooter.js'
+import secondfooter from './secondfooter.js'
 document.getElementById("secondfooter").innerHTML= secondfooter() 
  
  

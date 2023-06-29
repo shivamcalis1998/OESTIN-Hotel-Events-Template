@@ -1,14 +1,14 @@
-import navbar from '../Oestin/Home-nav-Footer/components/navbar.js'
+import navbar from './navbar.js'
 document.getElementById("homepage-section1").innerHTML= navbar() 
 
-import footer from '../Oestin/Home-nav-Footer/components/footer.js'
+import footer from './footer.js'
 document.getElementById("footer").innerHTML= footer() 
 
 
-import secondfooter from '../Oestin/Home-nav-Footer/components/secondfooter.js'
+import secondfooter from './secondfooter.js'
 document.getElementById("secondfooter").innerHTML= secondfooter() 
 
-import infiniteSlider from '../Oestin/Home-nav-Footer/components/infiniteSlidelogo.js'
+import infiniteSlider from './infiniteSlidelogo.js'
 document.getElementById("logos").innerHTML= infiniteSlider() 
 
 

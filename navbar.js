@@ -25,14 +25,14 @@ const navbar = () => {
       <input type="radio" name="slider" id="close-btn">
       <ul class="nav-links">
        <label for="close-btn" class="btn close-btn"><i class="fas fa-times"></i></label>
-       <li><a href="/Oestin/Home-nav-Footer/index.html">HOME</a></li>
+       <li><a href="./index.html">HOME</a></li>
        <li>
          <a href="#" class="desktop-item">ROOM</a>
          <input type="checkbox" id="showDrop">
          <label for="showDrop" class="mobile-item">ROOM</label>
          <ul class="drop-menu">
-           <li><a href="/Oestin/FinalRoomList/roomlist.html">ROOM LIST</a></li>
-           <li><a href="/Oestin/HotelCard.html">ROOM GRID</a></li>
+           <li><a href="../Oestin/FinalRoomList/roomlist.html">ROOM LIST</a></li>
+           <li><a href="./HotelCard.html">ROOM GRID</a></li>
          </ul>
        </li>
        <li>
@@ -71,9 +71,9 @@ const navbar = () => {
            </div>
          </div>
        </li>
-       <li><a href="/Oestin/location.html">LOCATION</a></li>
-       <li><a href="/Oestin/event.html">EVENT</a></li>
-       <li><a href="/Oestin/Signup.html">ACCOUNT</a></li>
+       <li><a href="./location.html">LOCATION</a></li>
+       <li><a href="./event.html">EVENT</a></li>
+       <li><a href="./Signup.html">ACCOUNT</a></li>
        <li><a href="#">CONTACT</a></li>
 
       </ul>
