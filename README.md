@@ -27,7 +27,7 @@ Welcome to our Hotel and Event Booking Website! This responsive web application 
 Meet the talented individuals behind this project:
 
 - **Shivam Swami:** 
-- **Shibhi Sharma:** 
+- **Shubhi Sharma:** 
 - **Abhishek Raj:** 
 - **Inderjeet Gupta:** 
 - **Akhil:**
